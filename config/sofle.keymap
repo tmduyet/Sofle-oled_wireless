@@ -42,8 +42,8 @@
 
             bindings = <
 &kp ESC    &kp N1  &kp N2            &kp N3    &kp N4            &kp N5                          &kp N6     &kp N7         &kp N8     &kp N9             &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W             &kp E     &kp R             &kp T                           &kp Y      &kp U          &kp I      &kp O              &kp P     &kp SQT
-&kp CAPS   &kp A   &kp S             &kp D     &kp F             &kp G                           &kp H      &kp J          &kp K      &kp L              &kp SEMI  &kp ENTER
+&kp TAB    &kp Q   &kp W             &kp E     &kp R             &kp T                           &kp Y      &kp U          &kp I      &kp O              &kp P     &kp ENTER
+&kp CAPS   &kp A   &kp S             &kp D     &kp F             &kp G                           &kp H      &kp J          &kp K      &kp L              &kp SEMI  &kp SINGLE_QUOTE
 &kp LSHFT  &kp Z   &kp X             &kp C     &kp V             &kp B      &kp C_MUTE    &mo 3  &kp N      &kp M          &kp COMMA  &kp DOT            &kp FSLH  &kp RSHFT
                    &kp LEFT_CONTROL  &kp LALT  &kp LEFT_COMMAND  &kp SPACE  &mo 2         &mo 1  &kp SPACE  &kp RIGHT_WIN  &kp RALT   &kp RIGHT_CONTROL
             >;
@@ -67,7 +67,7 @@
 &trans     &kp LEFT_BRACE  &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE                             &kp EQUAL     &kp PLUS   &kp UNDERSCORE  &kp MINUS       &kp NON_US_BACKSLASH  &kp F12
 &trans     &kp LESS_THAN   &kp GREATER_THAN  &kp COLON         &kp SEMICOLON      &kp DOUBLE_QUOTES                    &kp QUESTION  &kp SLASH  &kp COMMA       &kp PERIOD      &kp SQT               &kp DOUBLE_QUOTES
 &trans     &kp K_UNDO      &kp K_CUT         &kp K_COPY        &kp K_PASTE        &trans             &trans    &trans  &kp TILDE     &kp CARET  &kp AMPERSAND   &kp UNDERSCORE  &trans                &trans
-                           &trans            &trans            &trans             &trans             &trans    &trans  &trans        &trans     &trans          &trans
+                           &trans            &trans            &trans             &kp ENTER          &trans    &trans  &trans        &trans     &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -84,11 +84,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&none   &none       &none      &none        &none        &none                       &trans     &trans    &trans    &trans     &trans   &trans
-&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &kp INS      &kp HOME                    &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp END                     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
-                    &trans     &trans       &trans       &trans    &trans    &trans  &trans     &trans    &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans   &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &kp INS       &kp HOME                        &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp END                         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
+                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
